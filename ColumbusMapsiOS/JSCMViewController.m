@@ -34,6 +34,8 @@
     CLLocationCoordinate2D coordinate = {40.001517, -83.019755};
     MKPointAnnotation* point = [MKPointAnnotation alloc];
     point.coordinate = coordinate;
+    point.title = @"OSU Statium";
+    point.subtitle = @"Home of the Ohio State Buckeyes";
     
     [mapView addAnnotation:point];
     
