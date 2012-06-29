@@ -7,27 +7,39 @@
 //
 
 #import "JSCMViewController.h"
+#import <MapKit/MapKit.h>
 
 @interface JSCMViewController ()
+
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end
 
 @implementation JSCMViewController
+@synthesize mapView;
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [self loadLocations];
 }
 
-- (void)viewDidUnload
-{
+- (void)viewDidUnload {
+    [self setMapView:nil];
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
+- (void)loadLocations {
+    
+    
+    CLLocationCoordinate2D coordinate = {40.001517, -83.019755};
+    MKPointAnnotation* point = [MKPointAnnotation alloc];
+    point.coordinate = coordinate;
+    
+    [mapView addAnnotation:point];
+    
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
     } else {

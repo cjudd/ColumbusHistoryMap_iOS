@@ -22,16 +22,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="xf9-lf-re5" id="cx0-xb-rxr"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="130" y="-75"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="JSCMViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/JSCMViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -88,11 +88,11 @@
 				C2832E74159DB60900ED6CA0 /* JSCMAppDelegate.h */,
 				C2832E75159DB60900ED6CA0 /* JSCMAppDelegate.m */,
 				C2832E77159DB60900ED6CA0 /* MainStoryboard_iPhone.storyboard */,
-				C2832E87159DC83B00ED6CA0 /* Location.gpx */,
-				C2832E88159DCA6100ED6CA0 /* OSU Statium.gpx */,
 				C2832E7A159DB60900ED6CA0 /* MainStoryboard_iPad.storyboard */,
 				C2832E7D159DB60900ED6CA0 /* JSCMViewController.h */,
 				C2832E7E159DB60900ED6CA0 /* JSCMViewController.m */,
+				C2832E87159DC83B00ED6CA0 /* Location.gpx */,
+				C2832E88159DCA6100ED6CA0 /* OSU Statium.gpx */,
 				C2832E6C159DB60900ED6CA0 /* Supporting Files */,
 			);
 			path = ColumbusMapsiOS;
