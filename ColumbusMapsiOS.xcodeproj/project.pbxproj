@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C2832E66159DB60900ED6CA0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2832E65159DB60900ED6CA0 /* UIKit.framework */; };
+		C2832E68159DB60900ED6CA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2832E67159DB60900ED6CA0 /* Foundation.framework */; };
+		C2832E6A159DB60900ED6CA0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2832E69159DB60900ED6CA0 /* CoreGraphics.framework */; };
+		C2832E70159DB60900ED6CA0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C2832E6E159DB60900ED6CA0 /* InfoPlist.strings */; };
+		C2832E72159DB60900ED6CA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2832E71159DB60900ED6CA0 /* main.m */; };
+		C2832E76159DB60900ED6CA0 /* JSCMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2832E75159DB60900ED6CA0 /* JSCMAppDelegate.m */; };
+		C2832E79159DB60900ED6CA0 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2832E77159DB60900ED6CA0 /* MainStoryboard_iPhone.storyboard */; };
+		C2832E7C159DB60900ED6CA0 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2832E7A159DB60900ED6CA0 /* MainStoryboard_iPad.storyboard */; };
+		C2832E7F159DB60900ED6CA0 /* JSCMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2832E7E159DB60900ED6CA0 /* JSCMViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C2832E61159DB60900ED6CA0 /* ColumbusMapsiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColumbusMapsiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2832E65159DB60900ED6CA0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C2832E67159DB60900ED6CA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C2832E69159DB60900ED6CA0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C2832E6D159DB60900ED6CA0 /* ColumbusMapsiOS-Info.plist */ = {isa = PBXFileReference; path = "ColumbusMapsiOS-Info.plist"; sourceTree = "<group>"; };
+		C2832E6F159DB60900ED6CA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C2832E71159DB60900ED6CA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C2832E73159DB60900ED6CA0 /* ColumbusMapsiOS-Prefix.pch */ = {isa = PBXFileReference; path = "ColumbusMapsiOS-Prefix.pch"; sourceTree = "<group>"; };
+		C2832E74159DB60900ED6CA0 /* JSCMAppDelegate.h */ = {isa = PBXFileReference; path = JSCMAppDelegate.h; sourceTree = "<group>"; };
+		C2832E75159DB60900ED6CA0 /* JSCMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSCMAppDelegate.m; sourceTree = "<group>"; };
+		C2832E78159DB60900ED6CA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		C2832E7B159DB60900ED6CA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		C2832E7D159DB60900ED6CA0 /* JSCMViewController.h */ = {isa = PBXFileReference; path = JSCMViewController.h; sourceTree = "<group>"; };
+		C2832E7E159DB60900ED6CA0 /* JSCMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSCMViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2832E5E159DB60900ED6CA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2832E66159DB60900ED6CA0 /* UIKit.framework in Frameworks */,
+				C2832E68159DB60900ED6CA0 /* Foundation.framework in Frameworks */,
+				C2832E6A159DB60900ED6CA0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2832E56159DB60900ED6CA0 = {
+			isa = PBXGroup;
+			children = (
+				C2832E6B159DB60900ED6CA0 /* ColumbusMapsiOS */,
+				C2832E64159DB60900ED6CA0 /* Frameworks */,
+				C2832E62159DB60900ED6CA0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2832E62159DB60900ED6CA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2832E61159DB60900ED6CA0 /* ColumbusMapsiOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2832E64159DB60900ED6CA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2832E65159DB60900ED6CA0 /* UIKit.framework */,
+				C2832E67159DB60900ED6CA0 /* Foundation.framework */,
+				C2832E69159DB60900ED6CA0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2832E6B159DB60900ED6CA0 /* ColumbusMapsiOS */ = {
+			isa = PBXGroup;
+			children = (
+				C2832E74159DB60900ED6CA0 /* JSCMAppDelegate.h */,
+				C2832E75159DB60900ED6CA0 /* JSCMAppDelegate.m */,
+				C2832E77159DB60900ED6CA0 /* MainStoryboard_iPhone.storyboard */,
+				C2832E7A159DB60900ED6CA0 /* MainStoryboard_iPad.storyboard */,
+				C2832E7D159DB60900ED6CA0 /* JSCMViewController.h */,
+				C2832E7E159DB60900ED6CA0 /* JSCMViewController.m */,
+				C2832E6C159DB60900ED6CA0 /* Supporting Files */,
+			);
+			path = ColumbusMapsiOS;
+			sourceTree = "<group>";
+		};
+		C2832E6C159DB60900ED6CA0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2832E6D159DB60900ED6CA0 /* ColumbusMapsiOS-Info.plist */,
+				C2832E6E159DB60900ED6CA0 /* InfoPlist.strings */,
+				C2832E71159DB60900ED6CA0 /* main.m */,
+				C2832E73159DB60900ED6CA0 /* ColumbusMapsiOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2832E60159DB60900ED6CA0 /* ColumbusMapsiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2832E82159DB60900ED6CA0 /* Build configuration list for PBXNativeTarget "ColumbusMapsiOS" */;
+			buildPhases = (
+				C2832E5D159DB60900ED6CA0 /* Sources */,
+				C2832E5E159DB60900ED6CA0 /* Frameworks */,
+				C2832E5F159DB60900ED6CA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColumbusMapsiOS;
+			productName = ColumbusMapsiOS;
+			productReference = C2832E61159DB60900ED6CA0 /* ColumbusMapsiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2832E58159DB60900ED6CA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JSCM;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = C2832E5B159DB60900ED6CA0 /* Build configuration list for PBXProject "ColumbusMapsiOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C2832E56159DB60900ED6CA0;
+			productRefGroup = C2832E62159DB60900ED6CA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2832E60159DB60900ED6CA0 /* ColumbusMapsiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2832E5F159DB60900ED6CA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2832E70159DB60900ED6CA0 /* InfoPlist.strings in Resources */,
+				C2832E79159DB60900ED6CA0 /* MainStoryboard_iPhone.storyboard in Resources */,
+				C2832E7C159DB60900ED6CA0 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2832E5D159DB60900ED6CA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2832E72159DB60900ED6CA0 /* main.m in Sources */,
+				C2832E76159DB60900ED6CA0 /* JSCMAppDelegate.m in Sources */,
+				C2832E7F159DB60900ED6CA0 /* JSCMViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C2832E6E159DB60900ED6CA0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2832E6F159DB60900ED6CA0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C2832E77159DB60900ED6CA0 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2832E78159DB60900ED6CA0 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		C2832E7A159DB60900ED6CA0 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2832E7B159DB60900ED6CA0 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C2832E80159DB60900ED6CA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C2832E81159DB60900ED6CA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2832E83159DB60900ED6CA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColumbusMapsiOS/ColumbusMapsiOS-Prefix.pch";
+				INFOPLIST_FILE = "ColumbusMapsiOS/ColumbusMapsiOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C2832E84159DB60900ED6CA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColumbusMapsiOS/ColumbusMapsiOS-Prefix.pch";
+				INFOPLIST_FILE = "ColumbusMapsiOS/ColumbusMapsiOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2832E5B159DB60900ED6CA0 /* Build configuration list for PBXProject "ColumbusMapsiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2832E80159DB60900ED6CA0 /* Debug */,
+				C2832E81159DB60900ED6CA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2832E82159DB60900ED6CA0 /* Build configuration list for PBXNativeTarget "ColumbusMapsiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2832E83159DB60900ED6CA0 /* Debug */,
+				C2832E84159DB60900ED6CA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2832E58159DB60900ED6CA0 /* Project object */;
+}
