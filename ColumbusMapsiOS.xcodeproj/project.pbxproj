@@ -16,6 +16,7 @@
 		C2832E79159DB60900ED6CA0 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2832E77159DB60900ED6CA0 /* MainStoryboard_iPhone.storyboard */; };
 		C2832E7C159DB60900ED6CA0 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2832E7A159DB60900ED6CA0 /* MainStoryboard_iPad.storyboard */; };
 		C2832E7F159DB60900ED6CA0 /* JSCMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2832E7E159DB60900ED6CA0 /* JSCMViewController.m */; };
+		C2832E86159DB7EE00ED6CA0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2832E85159DB7EE00ED6CA0 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +24,17 @@
 		C2832E65159DB60900ED6CA0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C2832E67159DB60900ED6CA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C2832E69159DB60900ED6CA0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C2832E6D159DB60900ED6CA0 /* ColumbusMapsiOS-Info.plist */ = {isa = PBXFileReference; path = "ColumbusMapsiOS-Info.plist"; sourceTree = "<group>"; };
+		C2832E6D159DB60900ED6CA0 /* ColumbusMapsiOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColumbusMapsiOS-Info.plist"; sourceTree = "<group>"; };
 		C2832E6F159DB60900ED6CA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C2832E71159DB60900ED6CA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C2832E73159DB60900ED6CA0 /* ColumbusMapsiOS-Prefix.pch */ = {isa = PBXFileReference; path = "ColumbusMapsiOS-Prefix.pch"; sourceTree = "<group>"; };
-		C2832E74159DB60900ED6CA0 /* JSCMAppDelegate.h */ = {isa = PBXFileReference; path = JSCMAppDelegate.h; sourceTree = "<group>"; };
+		C2832E73159DB60900ED6CA0 /* ColumbusMapsiOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ColumbusMapsiOS-Prefix.pch"; sourceTree = "<group>"; };
+		C2832E74159DB60900ED6CA0 /* JSCMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSCMAppDelegate.h; sourceTree = "<group>"; };
 		C2832E75159DB60900ED6CA0 /* JSCMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSCMAppDelegate.m; sourceTree = "<group>"; };
 		C2832E78159DB60900ED6CA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		C2832E7B159DB60900ED6CA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		C2832E7D159DB60900ED6CA0 /* JSCMViewController.h */ = {isa = PBXFileReference; path = JSCMViewController.h; sourceTree = "<group>"; };
+		C2832E7D159DB60900ED6CA0 /* JSCMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSCMViewController.h; sourceTree = "<group>"; };
 		C2832E7E159DB60900ED6CA0 /* JSCMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSCMViewController.m; sourceTree = "<group>"; };
+		C2832E85159DB7EE00ED6CA0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2832E86159DB7EE00ED6CA0 /* MapKit.framework in Frameworks */,
 				C2832E66159DB60900ED6CA0 /* UIKit.framework in Frameworks */,
 				C2832E68159DB60900ED6CA0 /* Foundation.framework in Frameworks */,
 				C2832E6A159DB60900ED6CA0 /* CoreGraphics.framework in Frameworks */,
@@ -52,6 +55,7 @@
 		C2832E56159DB60900ED6CA0 = {
 			isa = PBXGroup;
 			children = (
+				C2832E85159DB7EE00ED6CA0 /* MapKit.framework */,
 				C2832E6B159DB60900ED6CA0 /* ColumbusMapsiOS */,
 				C2832E64159DB60900ED6CA0 /* Frameworks */,
 				C2832E62159DB60900ED6CA0 /* Products */,
