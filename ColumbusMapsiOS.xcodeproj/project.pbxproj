@@ -35,6 +35,8 @@
 		C2832E7D159DB60900ED6CA0 /* JSCMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSCMViewController.h; sourceTree = "<group>"; };
 		C2832E7E159DB60900ED6CA0 /* JSCMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSCMViewController.m; sourceTree = "<group>"; };
 		C2832E85159DB7EE00ED6CA0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C2832E87159DC83B00ED6CA0 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
+		C2832E88159DCA6100ED6CA0 /* OSU Statium.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "OSU Statium.gpx"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,6 @@
 		C2832E56159DB60900ED6CA0 = {
 			isa = PBXGroup;
 			children = (
-				C2832E85159DB7EE00ED6CA0 /* MapKit.framework */,
 				C2832E6B159DB60900ED6CA0 /* ColumbusMapsiOS */,
 				C2832E64159DB60900ED6CA0 /* Frameworks */,
 				C2832E62159DB60900ED6CA0 /* Products */,
@@ -73,6 +74,7 @@
 		C2832E64159DB60900ED6CA0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C2832E85159DB7EE00ED6CA0 /* MapKit.framework */,
 				C2832E65159DB60900ED6CA0 /* UIKit.framework */,
 				C2832E67159DB60900ED6CA0 /* Foundation.framework */,
 				C2832E69159DB60900ED6CA0 /* CoreGraphics.framework */,
@@ -86,6 +88,8 @@
 				C2832E74159DB60900ED6CA0 /* JSCMAppDelegate.h */,
 				C2832E75159DB60900ED6CA0 /* JSCMAppDelegate.m */,
 				C2832E77159DB60900ED6CA0 /* MainStoryboard_iPhone.storyboard */,
+				C2832E87159DC83B00ED6CA0 /* Location.gpx */,
+				C2832E88159DCA6100ED6CA0 /* OSU Statium.gpx */,
 				C2832E7A159DB60900ED6CA0 /* MainStoryboard_iPad.storyboard */,
 				C2832E7D159DB60900ED6CA0 /* JSCMViewController.h */,
 				C2832E7E159DB60900ED6CA0 /* JSCMViewController.m */,
