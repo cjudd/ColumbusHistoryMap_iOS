@@ -34,9 +34,9 @@
 - (MKAnnotationView *)mapView:(MKMapView *)aMapView viewForAnnotation:(id < MKAnnotation >)annotation {
     if(annotation == mapView.userLocation) {return nil;}
     
-    MKPinAnnotationView *annotationView = (MKPinAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:@"marker"];
+    MKAnnotationView *annotationView = (MKAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:@"marker"];
     if(nil == annotationView) {
-        annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"marker"];
+        annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"marker"];
         annotationView.image = [UIImage imageNamed:@"history.png"];
     }
     
