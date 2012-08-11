@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //[self loadLocations];
+    [self loadLocations];
     [self loadHistoricalMarkers];
     mapView.delegate = self;
 }
