@@ -31,6 +31,17 @@
     [super viewDidUnload];
 }
 
+- (MKAnnotationView *)mapView:(MKMapView *)aMapView viewForAnnotation:(id < MKAnnotation >)annotation {
+    if(annotation == mapView.userLocation) {return nil;}
+    
+    MKPinAnnotationView *annotationView = (MKPinAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:@"marker"];
+    if(nil == annotationView) {
+        annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"marker"];
+        annotationView.pinColor = MKPinAnnotationColorPurple;
+    }
+    
+    return annotationView;
+}
 
 - (void)mapView:(MKMapView *)aMapView regionDidChangeAnimated:(BOOL)animated {
     MKCoordinateRegion region = aMapView.region;
