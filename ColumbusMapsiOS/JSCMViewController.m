@@ -37,7 +37,7 @@
     MKPinAnnotationView *annotationView = (MKPinAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:@"marker"];
     if(nil == annotationView) {
         annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"marker"];
-        annotationView.pinColor = MKPinAnnotationColorPurple;
+        annotationView.image = [UIImage imageNamed:@"history.png"];
     }
     
     return annotationView;

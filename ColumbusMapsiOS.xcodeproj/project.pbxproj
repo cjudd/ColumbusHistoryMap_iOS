@@ -18,6 +18,7 @@
 		C2832E7F159DB60900ED6CA0 /* JSCMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2832E7E159DB60900ED6CA0 /* JSCMViewController.m */; };
 		C2832E86159DB7EE00ED6CA0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2832E85159DB7EE00ED6CA0 /* MapKit.framework */; };
 		C2832E8B159DD52900ED6CA0 /* JSCMHistoryMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = C2832E8A159DD52900ED6CA0 /* JSCMHistoryMarker.m */; };
+		C2FF14A515D5FC5B00598F75 /* history.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FF14A415D5FC5B00598F75 /* history.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		C2832E89159DD52900ED6CA0 /* JSCMHistoryMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCMHistoryMarker.h; sourceTree = "<group>"; };
 		C2832E8A159DD52900ED6CA0 /* JSCMHistoryMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCMHistoryMarker.m; sourceTree = "<group>"; };
 		C2832E90159E201800ED6CA0 /* ColumbusMapsiOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ColumbusMapsiOS.entitlements; sourceTree = "<group>"; };
+		C2FF14A415D5FC5B00598F75 /* history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = history.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				C2832E7E159DB60900ED6CA0 /* JSCMViewController.m */,
 				C2832E89159DD52900ED6CA0 /* JSCMHistoryMarker.h */,
 				C2832E8A159DD52900ED6CA0 /* JSCMHistoryMarker.m */,
+				C2FF14A415D5FC5B00598F75 /* history.png */,
 				C2832E87159DC83B00ED6CA0 /* Location.gpx */,
 				C2832E88159DCA6100ED6CA0 /* OSU Statium.gpx */,
 				C2832E6C159DB60900ED6CA0 /* Supporting Files */,
@@ -170,6 +173,7 @@
 				C2832E70159DB60900ED6CA0 /* InfoPlist.strings in Resources */,
 				C2832E79159DB60900ED6CA0 /* MainStoryboard_iPhone.storyboard in Resources */,
 				C2832E7C159DB60900ED6CA0 /* MainStoryboard_iPad.storyboard in Resources */,
+				C2FF14A515D5FC5B00598F75 /* history.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
