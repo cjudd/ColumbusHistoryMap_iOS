@@ -17,6 +17,7 @@
 		C2832E7C159DB60900ED6CA0 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2832E7A159DB60900ED6CA0 /* MainStoryboard_iPad.storyboard */; };
 		C2832E7F159DB60900ED6CA0 /* JSCMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2832E7E159DB60900ED6CA0 /* JSCMViewController.m */; };
 		C2832E86159DB7EE00ED6CA0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2832E85159DB7EE00ED6CA0 /* MapKit.framework */; };
+		C2832E8B159DD52900ED6CA0 /* JSCMHistoryMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = C2832E8A159DD52900ED6CA0 /* JSCMHistoryMarker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,9 @@
 		C2832E85159DB7EE00ED6CA0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C2832E87159DC83B00ED6CA0 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		C2832E88159DCA6100ED6CA0 /* OSU Statium.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "OSU Statium.gpx"; sourceTree = "<group>"; };
+		C2832E89159DD52900ED6CA0 /* JSCMHistoryMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCMHistoryMarker.h; sourceTree = "<group>"; };
+		C2832E8A159DD52900ED6CA0 /* JSCMHistoryMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCMHistoryMarker.m; sourceTree = "<group>"; };
+		C2832E90159E201800ED6CA0 /* ColumbusMapsiOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ColumbusMapsiOS.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +89,15 @@
 		C2832E6B159DB60900ED6CA0 /* ColumbusMapsiOS */ = {
 			isa = PBXGroup;
 			children = (
+				C2832E90159E201800ED6CA0 /* ColumbusMapsiOS.entitlements */,
 				C2832E74159DB60900ED6CA0 /* JSCMAppDelegate.h */,
 				C2832E75159DB60900ED6CA0 /* JSCMAppDelegate.m */,
 				C2832E77159DB60900ED6CA0 /* MainStoryboard_iPhone.storyboard */,
 				C2832E7A159DB60900ED6CA0 /* MainStoryboard_iPad.storyboard */,
 				C2832E7D159DB60900ED6CA0 /* JSCMViewController.h */,
 				C2832E7E159DB60900ED6CA0 /* JSCMViewController.m */,
+				C2832E89159DD52900ED6CA0 /* JSCMHistoryMarker.h */,
+				C2832E8A159DD52900ED6CA0 /* JSCMHistoryMarker.m */,
 				C2832E87159DC83B00ED6CA0 /* Location.gpx */,
 				C2832E88159DCA6100ED6CA0 /* OSU Statium.gpx */,
 				C2832E6C159DB60900ED6CA0 /* Supporting Files */,
@@ -176,6 +183,7 @@
 				C2832E72159DB60900ED6CA0 /* main.m in Sources */,
 				C2832E76159DB60900ED6CA0 /* JSCMAppDelegate.m in Sources */,
 				C2832E7F159DB60900ED6CA0 /* JSCMViewController.m in Sources */,
+				C2832E8B159DD52900ED6CA0 /* JSCMHistoryMarker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +267,7 @@
 		C2832E83159DB60900ED6CA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ColumbusMapsiOS/ColumbusMapsiOS.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ColumbusMapsiOS/ColumbusMapsiOS-Prefix.pch";
 				INFOPLIST_FILE = "ColumbusMapsiOS/ColumbusMapsiOS-Info.plist";
@@ -270,6 +279,7 @@
 		C2832E84159DB60900ED6CA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ColumbusMapsiOS/ColumbusMapsiOS.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ColumbusMapsiOS/ColumbusMapsiOS-Prefix.pch";
 				INFOPLIST_FILE = "ColumbusMapsiOS/ColumbusMapsiOS-Info.plist";
@@ -297,6 +307,7 @@
 				C2832E84159DB60900ED6CA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
