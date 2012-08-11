@@ -30,6 +30,19 @@
     [super viewDidUnload];
 }
 
+- (IBAction)zoomCurrentLocation:(id)sender {
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(
+                    mapView.userLocation.location.coordinate, 500, 500);
+    [mapView setRegion:region animated:TRUE];
+}
+
+- (IBAction)zoomColumbus:(id)sender {
+    CLLocationCoordinate2D columbusCenterCoordinate = {39.971793, -82.983396};
+    MKCoordinateSpan span = MKCoordinateSpanMake(0.390456, 0.390456);
+    MKCoordinateRegion region = MKCoordinateRegionMake(columbusCenterCoordinate, span);
+    [mapView setRegion:region animated:TRUE];
+}
+
 - (void)loadLocations {
     
     
