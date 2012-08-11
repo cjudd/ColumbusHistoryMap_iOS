@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self loadLocations];
+    //[self loadLocations];
     [self loadHistoricalMarkers];
     mapView.delegate = self;
 }
@@ -45,10 +45,15 @@
     return annotationView;
 }
 
-- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
+- (void)mapView:(MKMapView *)aMapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
 
-	NSLog(@"%@ marker was selected.", view.annotation.title);
-	//Could open a detail view, navigate to a website, call, etc.
+    id <MKAnnotation> annotation = view.annotation;
+	
+	NSString* url = [NSString stringWithFormat:@"http://maps.google.com/maps?daddr=%f,%f&saddr=%f,%f", 
+					 annotation.coordinate.latitude, annotation.coordinate.longitude, 
+					 aMapView.userLocation.location.coordinate.latitude,
+                     aMapView.userLocation.location.coordinate.longitude];
+	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];		
 }
 
 - (void)mapView:(MKMapView *)aMapView regionDidChangeAnimated:(BOOL)animated {
