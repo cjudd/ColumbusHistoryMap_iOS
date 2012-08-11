@@ -23,6 +23,7 @@
     [super viewDidLoad];
     [self loadLocations];
     [self loadHistoricalMarkers];
+    [self loadOverlay];
     mapView.delegate = self;
 }
 
@@ -56,6 +57,17 @@
 	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];		
 }
 
+- (MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id <MKOverlay>)overlay { 
+    MKPolygonView* view = nil;
+    if ([overlay isKindOfClass:[MKPolygon class]]) {
+        view = [[MKPolygonView alloc] initWithPolygon:(MKPolygon*)overlay];
+        view.fillColor = [[UIColor redColor] colorWithAlphaComponent:0.1];
+        view.strokeColor = [[UIColor redColor] colorWithAlphaComponent:0.8]; 
+        view.lineWidth = 2;
+    }
+    return view; 
+}
+
 - (void)mapView:(MKMapView *)aMapView regionDidChangeAnimated:(BOOL)animated {
     MKCoordinateRegion region = aMapView.region;
     NSLog(@"Current local - {%f, %f} span (%f, %f)", 
@@ -74,6 +86,22 @@
     MKCoordinateSpan span = MKCoordinateSpanMake(0.390456, 0.390456);
     MKCoordinateRegion region = MKCoordinateRegionMake(columbusCenterCoordinate, span);
     [mapView setRegion:region animated:TRUE];
+}
+
+- (void)loadOverlay {
+    CLLocationCoordinate2D topLeftLatLong = {40.116940, -83.144531};
+    MKMapPoint topLeftPoint = MKMapPointForCoordinate(topLeftLatLong);
+    CLLocationCoordinate2D topRightLatLong = {40.143190, -82.926178};
+    MKMapPoint topRightPoint = MKMapPointForCoordinate(topRightLatLong);
+    CLLocationCoordinate2D bottomLeftLatLong = {39.925535, -83.129425};
+    MKMapPoint bottomLeftPoint = MKMapPointForCoordinate(bottomLeftLatLong);
+    CLLocationCoordinate2D bottomRightLatLong = {39.874966, -82.894592};
+    MKMapPoint bottomRightPoint = MKMapPointForCoordinate(bottomRightLatLong);
+    
+    MKMapPoint points[4] = { topLeftPoint, topRightPoint, bottomRightPoint, bottomLeftPoint };
+    
+    MKPolygon* columbusOverlay = [MKPolygon polygonWithPoints:points count:4]; 
+    [mapView addOverlay:columbusOverlay];
 }
 
 - (void)loadLocations {
