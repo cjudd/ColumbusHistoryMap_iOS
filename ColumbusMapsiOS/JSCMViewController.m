@@ -38,6 +38,7 @@
     if(nil == annotationView) {
         annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"marker"];
         annotationView.image = [UIImage imageNamed:@"history.png"];
+        annotationView.canShowCallout = YES;
     }
     
     return annotationView;
@@ -64,7 +65,6 @@
 }
 
 - (void)loadLocations {
-    
     CLLocationCoordinate2D coordinate = {40.001517, -83.019755};
     MKPointAnnotation* point = [MKPointAnnotation alloc];
     point.coordinate = coordinate;
