@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface JSCMViewController : UIViewController
+@interface JSCMViewController : UIViewController <MKMapViewDelegate>
 
 @end

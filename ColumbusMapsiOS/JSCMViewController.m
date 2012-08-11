@@ -23,11 +23,20 @@
     [super viewDidLoad];
     [self loadLocations];
     [self loadHistoricalMarkers];
+    mapView.delegate = self;
 }
 
 - (void)viewDidUnload {
     [self setMapView:nil];
     [super viewDidUnload];
+}
+
+
+- (void)mapView:(MKMapView *)aMapView regionDidChangeAnimated:(BOOL)animated {
+    MKCoordinateRegion region = aMapView.region;
+    NSLog(@"Current local - {%f, %f} span (%f, %f)", 
+          region.center.latitude, region.center.longitude, 
+          region.span.latitudeDelta, region.span.longitudeDelta );
 }
 
 - (IBAction)zoomCurrentLocation:(id)sender {
@@ -45,7 +54,6 @@
 
 - (void)loadLocations {
     
-    
     CLLocationCoordinate2D coordinate = {40.001517, -83.019755};
     MKPointAnnotation* point = [MKPointAnnotation alloc];
     point.coordinate = coordinate;
@@ -53,7 +61,6 @@
     point.subtitle = @"Home of the Ohio State Buckeyes";
     
     [mapView addAnnotation:point];
-    
 }
 
 - (void) loadHistoricalMarkers {
