@@ -21,10 +21,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    mapView.delegate = self;
     [self loadLocations];
     [self loadHistoricalMarkers];
     [self loadOverlay];
-    mapView.delegate = self;
 }
 
 - (void)viewDidUnload {
